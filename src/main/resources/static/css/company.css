@@ -1,0 +1,185 @@
+/* 同じCSSを充てる場合は、同じクラス名をつけてOK */
+
+body {
+    background-color: rgb(228, 207, 178);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content {
+    width: 90%;
+    height: auto;
+    background-color: #f4ece1;
+    text-align: center;
+    margin: 100px auto 100px auto;
+    padding: 10px 0px 10px 0px;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+    position: relative;
+}
+
+.content .content-title h5 {
+    color: orange;
+}
+
+.content .pic {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 40%;
+}
+
+.content .pic img {
+    width: 100%;
+    height: auto;
+}
+
+.content .intro {
+    width: 75%;
+}
+
+.content .content-title {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content .rinen img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .rinen b {
+    /* text-align: center; */
+    /* margin-bottom: -5px; */
+}
+
+.content .rinen {
+    text-align: center;
+}
+
+/* .content .intro .abc{
+    text-align: center;
+} */
+
+.content .rinen p {
+    font-size: large;
+}
+
+.content .text {
+    text-align: left;
+}
+
+.content p {
+    font-size: small;
+    text-align: left;
+}
+
+.content b {
+    font-size: smaller;
+    display: block;
+    text-align: left;
+}
+
+.abc {
+    /* width: 100%; */
+    margin: 0 auto;
+}
+
+header {
+    background-image: none;
+    background-image: url(../img/COMPANY_heater.png);
+    color: white;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+}
+
+.matome{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:3em;
+}
+
+.koudou{
+    text-align: left;
+    width:47%
+}
+.koudou > p > b{
+   font-size: 1.25em; 
+}
+
+.hiyaku{
+    text-align: left;
+    width:47%;
+}
+
+@media screen and (max-width: 1024px) {
+    .content {
+        width: 90%;
+    }
+    .content .intro {
+        width: 80%;
+    }
+    .abc {
+        /* width: 100%; */
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content h5 {
+        font-size: 0.7em;
+    }
+    .content h3 {
+        font-size: 1.0em;
+    }
+    .content .pic {
+        width: 0%;
+    }
+    .content .pic img {
+        width: 0%;
+    }
+    .content .intro {
+        margin: 0 auto;
+    }
+    header {
+        background-image: none;
+        background-image: url(../img/COMPANY_tablet.png);
+        color: white;
+        margin: 0 auto;
+        height: 52vw;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content h5 {
+        font-size: 0.5em;
+    }
+    .content h2 {
+        font-size: 0.7em;
+    }
+    header {
+        background-image: none;
+        background-image: url(../img/COMPANY_tablet.png);
+        color: white;
+        margin: 0 auto;
+        height: 52vw;
+        width: 100%;
+    }
+    
+    .matome {
+        display: block;
+        margin-bottom: 2em;
+    }
+    .koudou {
+        margin-bottom:2em;
+        width:100%;
+    }
+    .hiyaku {
+        width:100%;
+    }
+}

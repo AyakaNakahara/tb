@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- 共通headerで置き換える -->
+<head th:replace="view :: meta_header('top',~{::link},~{::script})">
+    <!-- このページ固有で読み込むCSS/JS -->
+    <link rel="stylesheet" th:href="@{/css/history.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/slick-theme.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/slick.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/sample.css}" type="text/css"/>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script type="text/javascript" th:inline="javascript">
+    $('.slider').slick({
+        autoplay:true,
+        autoplaySpeed:5000,
+        dots:true,
+    });
+    </script>
+</head>
+<body>
+    <!-- ヘッダーを呼び出す -->
+    <div th:replace="view :: header"></div>
+
+    <!-- main -->
+    <div class="container">
+
+            <div class="timetitle">
+                <!-- <img src="img/saltotimeline.png" > -->
+                <p></p>
+                <h1 class="h1">TIME LINE</h1>
+            </div>
+
+
+    <div class="box shadow"> <!--2015  -->
+                <div class="section-left">
+                <div class="redline">
+                        <img  src="img/red.png">
+                    </div>
+                    <p class="year">
+                    2015
+                    </p>
+                    <div class="year-start">
+                        <img src="img/saltostart.jpg">
+                    </div>
+                    </div>
+                <div class="section-right">
+                <h2 class="start"> HISTORY   </h2>
+                <table style="font-size:medium; line-height: 200%;" class="hyou">
+                <tr>
+                    <td></td>
+                    <td>世の中に役立つサービスを作り出したい！という想いを胸に</td>
+                </tr>
+                <tr>
+                <td width=100px> 2015年
+
+                    9月 </td>
+                <td> <span style="color: red;">
+                株式会社SALTO 設立</td>
+                </span>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td><br></td>
+                    </tr>
+                    <tr>
+                <td>  </td>
+                <td>社員5人でスタート<br></td>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td><br></td>
+                    </tr>
+
+                <tr>
+                <td>  </td>
+                <td>営業の日々</td>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td><br></td>
+                    </tr>
+                <tr>
+                <td>  </td>
+                <td> 会社の銀行口座が作れない事件 。。。</td>
+                </tr>
+                </table>
+                </div>
+    </div>
+
+    <div class="box shadow"> <!--2016  -->
+        <div class="section-left">
+            <div class="redline">
+                        <img  src="img/red.png">
+            </div>
+            <p class="year">2016
+            </p>
+            <div class="year-start">
+                <img src="img/20162ndstart.jpg">
+            </div>
+        </div>
+
+        <div class="section-right">
+            <h2 class="start"> HISTORY   </h2>
+            <table style="font-size:medium; line-height: 150%;" class="hyou">
+            <tr>
+            <td width=100px>
+                2016年9月 </td>
+            <td>第2期スタート </td>
+            </tr>                <tr>
+                <td>  </td>
+                <td><br></td>
+                </tr>
+
+            </table>
+            <table style="font-size:medium; line-height: 150%;" class="hyou">
+                <tr>
+                    <td width=100px>
+                        2016年秋 </td>
+                <td>	社員旅行in伊豆</td>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td><br></td>
+                    </tr>
+
+                <tr>
+                <td></td>
+                    <td>
+                        毎月飲み会が行われるような会社
+                    </td>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td><br></td>
+                    </tr>
+
+                <tr>
+                <td></td>
+                    <td>
+                        行先は湧水地の伊豆。
+                    </td>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td><br></td>
+                    </tr>
+
+                <tr>
+                <td></td>
+                    <td>
+                        いい大人ばかりの会社。
+                    </td>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td><br></td>
+                    </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                    （察し）
+                    </td>
+                </tr>
+                </tr>
+                </table>
+                <br>
+        </div>
+    </div>
+
+
+    <div class="box shadow"> <!--2017  -->
+        <div class="section-left">
+        <div class="redline">
+            <img  src="img/red.png">
+        </div>
+        <p class="year">
+        2017
+        </p>
+        <div class="year-start">
+            <img src="img/20173rdstart.jpg">
+        </div>
+        </div>
+        <div class="section-right">
+            <h2 class="start"> HISTORY   </h2>
+        <table style="font-size:medium; line-height: 150%;" class="hyou">
+        <tr>
+        <td> 2017年4月	  </td>
+        <td>	初の新卒(17卒)3名入社</td>
+        </tr>
+        </table>
+        <br>
+        <table style="font-size:medium; line-height: 150%;" class="hyou">
+        <tr>
+        <td> 2017年9月	  </td>
+        <td>第3期スタート</td>
+        </tr>
+        <tr>
+        <td> </td>
+        <td>教育プロジェクトの立ち上げ　
+        </td>
+        </tr>
+        </table>
+        <br>
+
+        <table style="font-size:medium; line-height: 150%;" class="hyou">
+        <tr>
+        <td> 2017年秋	  </td>
+        <td>社員旅行in沖縄</td>
+        </tr>
+        </table>
+        <br>
+
+        <table style="font-size:medium; line-height: 150%;">
+            <tr>
+            <td> 2017年12月</td>
+            <td><span style="color: red;">株式会社LEAP 設立
+            </span></td>
+            </tr>
+            </table>
+            <br>
+
+        </div>
+    </div>
+
+    <div class="box shadow"> <!--2018  -->
+        <div class="section-left">
+        <div class="redline">
+            <img  src="img/red.png">
+        </div>
+        <p class="year">2018</p>
+        <div class="year-start">
+            <img src="img/20194thstart.jpg">
+        </div>
+        </div>
+        <div class="section-right">
+            <h2 class="start"> HISTORY   </h2>
+
+        <table style="font-size:medium; line-height: 150%;" class="hyou">
+            <tr>
+                <td> 2018年4月 </td>
+                <td>新卒(18卒)8名入社</td>
+            </tr>
+        </table>
+        <br>
+
+        <table style="font-size:medium; line-height: 150%;" class="hyou">
+        <tr>
+        <td>2018年9月</td>
+        <td>第4期スタート</td>
+        </tr>
+        <tr>
+        <td></td>
+        <td>立ち上げメンバーの卒業が
+            <br class="tablet">
+            相次ぐ。</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>企業として特色を出す
+                <br class="tablet">
+                第2フェーズへ移行<br><br>
+        </td>
+        </tr>
+        </table>
+
+        <table style="font-size:medium; line-height: 150%;" class="hyou">
+            <tr>
+                <td> 2018年 秋</td>
+                <td>社員旅行in 金沢</td>
+            </tr>
+        </table>
+        <br>
+        </div>
+    </div>
+
+
+    <div class="box shadow"> <!--2019  -->
+        <div class="section-left">
+            <div class="redline">
+                <img  src="img/red.png">
+            </div>
+            <p class="year">
+                    2019
+        </p>
+        <div class="year-start">
+            <img src="img/20195thstart.jpg">
+        </div>
+        </div>
+        <div class="section-right">
+            <h2 class="start"> HISTORY   </h2>
+            <table style="font-size:medium; line-height: 150%;" class="hyou">
+                <tr>
+                    <td>2019年4月</td>
+                    <td>新卒(19卒)12名入社</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+
+            <table style="font-size:medium; line-height: 150%;" class="hyou">
+                <tr>
+                    <td>2019年9月</td>
+                    <td>第5期スタート</td>
+                </tr>
+            </table>
+            <br>
+
+            <table style="font-size:medium; line-height: 150%;" class="hyou">
+                <tr>
+                    <td>2019年秋</td>
+                    <td>社員旅行in北海道</td>
+                </tr>
+            </table>
+            <br>
+
+            <table style="font-size:medium; line-height: 150%;" class="hyou">
+                <tr>
+                    <td>2019年11月</td>
+                    <td><span style="color: red;">
+                        SALTO-Vietnam 設立</span></td>
+                </tr>
+            </table>
+            <br>
+        </div>
+    </div>
+
+    <div class="box shadow"> <!--2020  -->
+        <div class="section-left last">
+            <div class="redline">
+                <img  src="img/red.png">
+            </div>
+            <p class="year">
+            2020
+            </p>
+            <div class="year-start">
+                <img src="img/2020start.jpg">
+            </div>
+        </div>
+
+        <div class="section-right">
+            <h2 class="start"> HISTORY   </h2>
+        <table style="font-size:medium; line-height: 150%;" class="hyou">
+            <tr>
+                <td>2020年4月</td>
+                <td>新卒（20卒）14名入社</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>「LESALTO」リリース</td>
+            </tr>
+        </table>
+        <br><br>
+        <br><br>
+        <p>to be continued...
+        </p>
+        </div>
+    </div>
+
+    <div class="box shadow">
+
+
+        <div class="section-left2">
+            <p class="year">
+            EVENT
+            </p>
+            <div class="year-start">
+                <p class ="mobile">第2金曜:帰社日＋懇親会（呑み会）</p>
+                <ul class="slider" style="padding: 0">
+                    <li><img src="img/back0.jpg"></li>
+                    <li><img src="img/back1.jpg"></li>
+                    <li><img src="img/back2.jpg"></li>
+                    <li><img src="img/back3.jpg"></li>
+                    <li><img src="img/back4.jpg"></li>
+                </ul>
+
+            </div>
+            <br>
+            <p class ="mobile">　　春　　　:お花見</p>
+            <br>
+            <div class="year-start">
+                <ul class="slider" style="padding: 0">
+                    <li><img src="img/sakura2.jpg"></li>
+                    <li><img src="img/sakura.jpg"></li>
+                </ul>
+            </div>
+            <br>
+
+            <p class ="mobile">　　夏　　:BBQ（海）</p>
+            <br>
+            <div class="year-start">
+                <ul class="slider" style="padding: 0">
+                    <li><img src="img/BBQ2.jpg"></li>
+                    <li><img src="img/BBQ3.jpg"></li>
+                    <li><img src="img/BBQ4.jpg"></li>
+                    <li><img src="img/BBQ5.jpg"></li>
+                </ul>
+            </div>
+            <br>
+
+
+            <p class ="mobile">　　秋　　:社員旅行</p>
+            <br>
+            <div class="year-start">
+                <ul class="slider" style="padding: 0">
+                    <li> <img src="img/trip1.jpg"></li>
+                    <li> <img src="img/trip2.jpg"></li>
+                    <li> <img src="img/trip4.jpg"></li>
+                    <li> <img src="img/trip3.jpg"></li>
+                    <li> <img src="img/trip0.jpg"></li>
+                </ul>
+            </div>
+            <br>
+
+            <p class ="mobile">　　冬　　:忘年会（ボウリング大会）</p>
+            <br>
+            <div class="year-start">
+                <ul class="slider" style="padding: 0">
+                    <li> <img src="img/YEP1.jpg"></li>
+                    <li> <img src="img/YEP2.jpg"></li>
+                    <li> <img src="img/YEP3.jpg"></li>
+                    <li> <img src="img/boring1.jpg"></li>
+                    <li> <img src="img/boring2.jpg"></li>
+                    <li> <img src="img/boring3.jpg"></li>
+                    <li> <img src="img/boring4.jpg"></li>
+                </ul>
+            </div>
+            <p class ="mobile">　不定期　:スポーツ大会、運動会
+            </p>
+            <br>
+            <div class="year-start">
+                <ul class="slider" style="padding: 0">
+                    <li> <img src="img/sport0.jpg"></li>
+                    <li> <img src="img/sport1.jpg"></li>
+                    <li> <img src="img/sport2.jpg"></li>
+                    <li> <img src="img/sport3.jpg"></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+	<!-- フッターを呼び出す -->
+    <div th:replace="view :: footer"></div>
+    <script src="js/slick.js"></script>
+</body>

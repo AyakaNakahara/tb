@@ -1,0 +1,81 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- 共通にしたいheadをfragment化する -->
+<head th:fragment="meta_header(title,links,scripts)">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- 共通で読み込むCSS/JS -->
+    <link rel="stylesheet" href="/css/wave.css">
+    <link rel="stylesheet" href="/css/template.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" th:inline="javascript">
+        window.onload = function() {
+            const spinner = document.getElementById('loading');
+            spinner.classList.add('loaded');
+        }
+    </script>
+    <!-- タイトルのフォーマット -->
+    <title>株式会社SALTO</title>
+
+    <!-- 各View固有で読み込むもの -->
+    <th:block th:replace="${links} ?: _" />
+    <th:block th:replace="${scripts} ?: _" />
+</head>
+<body>
+    <!-- body内で共通化したい部品をfragment化する -->
+    <header th:fragment="header">
+    <div id="loading">
+        <div class="spinner"></div>
+      </div>
+        <div class="nav">
+            <ul>
+                <li>
+                    <p>
+                        <a href="/" class="title1"  style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';">TOP</a>/
+                        <a href="/company" class="title1" style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';">COMPANY</a>/
+                        <a href="/history" class="title1" style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';">HISTORY</a>/
+                        <a href="/shain_all" class="title1" style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';">MEMBER</a>/
+                        <a href="/monthly_salto" class="title1" style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';">MONTHLY</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+    </header>
+
+    <footer th:fragment="footer">
+        <div class="footer-main">
+            <div class="footer-title">
+                <h3  style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';">SALTO Co.Ltd</h3>
+                <h4 style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';">OFFICE</h4>
+            </div>
+            <div class="footer-list">
+                <div class="list">
+                     <p style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';">〒 160-0022</p>
+                     <p style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';">SHINJUKU MARNE TOWER 2F</p>
+                     <p style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';">SHINJUKU SHINJUKU-KU</p>
+                     <p style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';">TOKYO 1-23-1</p>
+                     <p style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';">TEL 03-5341-4906</p>
+                     <p style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';">FAX 03-5341-4907</p>
+                </div>
+                <div class="list">
+                    <p style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';"><a href="/">TOP PAGE</a></p>
+                    <p style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';"><a href="/company">事業紹介(company)</a></p>
+                    <p style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';"><a href="/history">企業沿革(history)</a></p>
+                    <p style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';"><a href="/shain_all">社員紹介(shain_all)</a></p>
+                </div>
+                <div class="list">
+                    <p style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';"><a href="/monthly_salto">月刊コンテンツ(monthly_salto)</a></p>
+                    <p style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';"><a href="/column4">4月号(2020/04)</a></p>
+                    <p style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';"><a href="/column5">5月号(2020/05)</a></p>
+                    <p style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';"><a href="/column6">6月号(2020/06)</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <p style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';">Copyright SALTO CO.Ltd</p>
+            <p style="font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体';">ALL RIGHT RESERVED</p>
+        </div>
+    </footer>
+</body>
+</html>

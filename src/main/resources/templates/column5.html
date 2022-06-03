@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- 共通headerで置き換える -->
+<head th:replace="view :: meta_header('top',~{::link},~{::script})">
+    <!-- このページ固有で読み込むCSS/JS -->
+    <link rel="stylesheet"th:href="@{/css/may2.css}" />
+    <script type="text/javascript" th:src="@{/js/jquery.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jQueryRotate.js}"></script>
+    <script type="text/javascript" th:src="@{/js/card.js}"></script>
+</head>
+<body>
+    <!-- ヘッダーを呼び出す -->
+    <div th:replace="view :: header"></div>
+    <div class="member">
+    <div class="left_pic">
+
+        <img src="img/fujjieda2.png">
+    </div>
+    <div class="right_text">
+        <div class="name">
+            <h2>NAOKI FUZIEDA</h2>
+            <h4>藤枝　直生</h4>
+        </div>
+        <div class="syoukai">
+            <p>
+                <br>
+                趣味はイタリアの伝統民族楽器「マンドリン」音域がヴァイオリンと同じ撥弦楽器であり
+                トレモロ奏法が特徴。軽やかな音色で、ディズニーシーのメディテレーニアンハーバー
+                や映画「風立ちぬ」のBGMにも使われていたり意外と身近な楽器です。
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="member">
+    <div class="xyz">
+        <img class="hidden" src="img\nihei2.png">
+    </div>
+    <div class="left_text">
+        <div class="name">
+            <h2>SHUN NIHEI</h2>
+            <h4>二瓶　駿</h4>
+        </div>
+        <div class="syoukai">
+            <p>
+                <br>
+                趣味は古着。古着には今の服にないデザイン、そしてオーラがある…。<br>
+                ビビッとくる一点物に出会えた日に飲むビールは美味い。<br>
+                そして次の日からカップ麺生活が始まる。貧乏。
+            </p>
+        </div>
+    </div>
+    <div class="right_pic">
+
+        <img class="s" src="img\nihei2.png">
+
+    </div>
+</div>
+
+
+
+<div class="member">
+    <div class="left_pic">
+
+        <img src="img\yuto2.png">
+
+    </div>
+    <div class="right_text">
+        <div class="name">
+            <h2>YUTO IWASAWA</h2>
+            <h4>岩澤　悠斗</h4>
+        </div>
+        <div class="syoukai">
+            <p>
+                <br>
+                バンドやったらモテるのでは、、、と思いバンド始めたら
+                いつしか本気になってしまいました！近い将来にフェスに出たい…！
+                デザインをしたり作曲したりクリエイティブなことが好きです。
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="member">
+    <div class="xyz">
+        <img class="hidden" src="img/mako2.png">
+    </div>
+    <div class="left_text">
+        <div class="name">
+            <h2>MAKO OTOMO</h2>
+            <h4>大友　真琴</h4>
+        </div>
+        <div class="syoukai">
+            <p>
+                <br>
+                趣味は、音楽を聴くこと。
+                毎週水曜日と金曜日に必ずリリースの確認をしています、、、(笑)
+                お酒飲みながら聴いてる瞬間が何よりの至福。
+                最近は、韓国のR&Bにハマってます！
+                皆さんのおすすめのアーティスト教えてくださ～い！
+
+            </p>
+        </div>
+    </div>
+    <div class="right_pic">
+
+        <img class="s" src="img/mako2.png">
+
+    </div>
+</div>
+
+
+
+
+<div class="member">
+    <div class="left_pic">
+        <img src="img/kazuya2.png">
+
+    </div>
+    <div class="right_text">
+        <div class="name">
+            <h2>KAZUYA NOZAKI</h2>
+            <h4>野崎　和弥</h4>
+        </div>
+        <div class="syoukai">
+            <p>
+                <br>
+                趣味は野球観戦。
+                中学の部活で野球を始めたのがきっかけで、地元チーム 千葉ロッテマリーンズのファンに。
+                自分が死ぬ前に目の前で優勝、胴上げを見ることが夢。
+                負けた日の翌日はだいたい機嫌悪いです。
+                <br>
+                社会人になったのでお酒克服が最近の目標です。
+
+            </p>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<div class="member">
+    <div class="xyz">
+        <img class="hidden" src="img/kuwabara.png">
+    </div>
+    <div class="left_text">
+        <div class="name">
+            <h2>KATUYOSI KUWABARA</h2>
+            <h4>桑原　克佳</h4>
+        </div>
+        <div class="syoukai">
+            <p>
+                <br>
+                桑原です。下の名前はありません。<br>
+                好きな言葉は「neutral」です。
+            </p>
+        </div>
+    </div>
+    <div class="right_pic">
+
+        <img class="s" src="img/kuwabara.png">
+
+    </div>
+</div>
+
+
+<div class="member">
+    <div class="left_pic">
+
+        <img src="img/ayaka2.png">
+
+    </div>
+    <div class="right_text">
+        <div class="name">
+            <h2>AYAKA NAKAHARA</h2>
+            <h4>中原　彩華</h4>
+        </div>
+        <div class="syoukai">
+            <p>
+                <br>
+                趣味は舞台・ミュージカルの観劇。<br>
+                今年こそは宝塚を見に行きたい…！<br>
+                <br>
+                好きな日本酒は長野県のボーン・ミッシェルです。<br>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class=pitat>
+        <br>
+    <h3>今日のラッキーパーソンは…？</h3>
+    <p style="font-size: 0.75em">
+                ☆　 好きなカードを選んでね　 ☆
+                <br>
+    </p>
+    <br>
+    </div>
+    <ul id="card"></ul>
+</div>
+<div id="bg_black"></div>
+
+	<!-- フッターを呼び出す -->
+    <div th:replace="view :: footer"></div>
+</body>

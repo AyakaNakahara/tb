@@ -1,0 +1,363 @@
+body {
+    background-color: rgb(228, 207, 178);
+}
+
+.title h1 {
+    color: orange;
+    text-align: center;
+}
+
+.member {
+    text-align: center;
+    height: 400px;
+    /* width: 100%; */
+    width: 1024px;
+    /* margin: 0 auto; */
+    display: flex;
+    margin: 100px auto;
+}
+
+.member .left_pic {
+    /* display: inline-block; */
+    /* background-color: royalblue; */
+    /* height: 300px; */
+    width: 50%;
+    box-sizing: border-box;
+    height: 400px;
+}
+
+.member .left_pic img {
+    /* position:relative; */
+    /* width: 50%; */
+    /* width: 500px; */
+    width: 100%;
+    height: 100%;
+}
+
+.member .right_text {
+    /* display: inline-block; */
+    /* position:relative; */
+    width: 50%;
+    /* height: auto; */
+    /* background-color: white;  */
+    background-color: #f4ece1;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    height: 400px;
+}
+
+.member .right_text .name h4 {
+    color: orange;
+}
+
+.member .right_text .syoukai {
+    font-size: small;
+    /* display: inline-block; */
+}
+
+.member .left_text {
+    /* display: inline-block; */
+    /* position:relative; */
+    width: 50%;
+    /* height: 500px; */
+    /* background-color: white;   */
+    background-color: #f4ece1;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    height: 400px;
+}
+
+.member .left_text .name h4 {
+    color: orange;
+}
+
+.member .left_text .syoukai {
+    font-size: small;
+    display: inline-block;
+}
+
+.member .right_pic {
+    /* display: inline-block; */
+    /* background-color: royalblue; */
+    /* height: 300px; */
+    width: 50%;
+    box-sizing: border-box;
+    height: 400px;
+}
+
+.member .right_pic img {
+    /* position:relative; */
+    /* width: 50%; */
+    /* width: 500px; */
+    width: 100%;
+    height: 100%;
+}
+
+.xyz>.hidden {
+    display: none;
+}
+
+.xyz {
+    width: 0%;
+    height: 0%;
+}
+
+.left_text {
+    z-index: 10;
+}
+
+.card {
+    height: 1350px;
+    /* width: 100%; */
+    width: 1024px;
+    background-color: #f4ece1;
+    margin: 100px auto;
+}
+
+.card p {
+    font-size: small;
+}
+
+.card .pitat {
+    text-align: center;
+}
+
+.card #card {
+    margin: 20px;
+    width: 90%;
+    /* height: 80%; */
+    list-style: none;
+}
+
+.card #card li {
+    margin: 10px;
+    width: 200px;
+    height: 250px;
+    float: left;
+    position: relative;
+}
+
+.card #card li img {
+    position: absolute;
+    width: 175px;
+    height: 260px;
+    margin: 20px 30px;
+}
+
+.card #card li.off,
+#card li.lock {
+    pointer-events: none;
+}
+
+
+/* .front::before {
+    width:100vw;
+    height:100vh;
+    background:black;
+} */
+
+.front {
+    /* position: fixed !important; */
+    top: -80px !important;
+    left: -30px;
+    /* bottom:0; */
+    z-index: 9999;
+}
+
+#bg_black {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: none;
+    z-index: 1000;
+    opacity: 0.5;
+}
+
+.front {
+    position: fixed !important;
+    top: 49% !important;
+    left: 50% !important;
+    width: 30vw !important;
+    height: auto !important;
+    /* transform: ; */
+    transform: translate(-50%, -50%);
+}
+
+.resize {
+    position: absolute !important;
+    top: 130px !important;
+    left: 87px !important;
+    width: 175px !important;
+    height: 260px !important;
+}
+
+header {
+    background-image: none;
+    background-image: url(../img/May_heater.png);
+}
+
+@media screen and (max-width: 1024px) {
+    .member {
+        height: 400px;
+        /* width: 100%; */
+        width: 768px;
+    }
+    .member .left_pic {
+        /* display: inline-block; */
+        /* background-color: royalblue; */
+        /* height: 300px; */
+        width: 100%;
+        height: 300px;
+    }
+    .member .right_text {
+        width: 100%;
+        height: 300px;
+    }
+    .member .right_text h2 {
+        font-size: 2.0rem;
+        margin: 0;
+    }
+    .member .right_text h4 {
+        font-size: 1.3rem;
+    }
+    .member .right_text p {
+        font-size: small;
+    }
+    .member .left_text {
+        width: 100%;
+        height: 300px;
+    }
+    .member .left_text h2 {
+        font-size: 2.0rem;
+        margin: 0;
+    }
+    .member .left_text h4 {
+        font-size: 1.3rem;
+    }
+    .member .right_pic {
+        width: 100%;
+        height: 300px;
+    }
+    .xyz .hidden {
+        display: none;
+    }
+    .xyz {
+        width: 0%;
+        height: 0%;
+    }
+    .card {
+        /* height: 400px; */
+        /* width: 100%; */
+        width: 768px;
+        height: 1650px;
+    }
+    .card #card li img {
+        margin: 20px 6px;
+    }
+    .front {
+        width: 50vw !important;
+        height: auto !important;
+        /* transform: ; */
+        transform: translate(-50%, -50%);
+    }
+    .resize {
+        position: absolute !important;
+        top: 130px !important;
+        left: 87px !important;
+        width: 175px !important;
+        height: 260px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .member {
+        text-align: center;
+        height: auto;
+        /* width: 100%; */
+        width: 100%;
+        /* margin: 0 auto; */
+        display: block;
+        margin: 100px auto;
+    }
+    .member .left_pic {
+        /* display: inline-block; */
+        /* background-color: royalblue; */
+        /* height: 300px; */
+        width: 70%;
+        box-sizing: border-box;
+        height: 80%;
+        margin: 0 auto;
+    }
+    .member .left_pic img {
+        /* position:relative; */
+        /* width: 50%; */
+        /* width: 500px; */
+        width: 100%;
+        height: 100%;
+    }
+    .member .right_text {
+        /* display: inline-block; */
+        /* position:relative; */
+        width: 70%;
+        /* height: auto; */
+        box-sizing: border-box;
+        height: 80%;
+        margin: 0 auto;
+    }
+    .member .left_text {
+        /* display: inline-block; */
+        /* position:relative; */
+        width: 70%;
+        /* height: auto; */
+        box-sizing: border-box;
+        height: 80%;
+        margin: 0 auto;
+    }
+    .member .right_pic {
+        /* display: inline-block; */
+        /* background-color: royalblue; */
+        /* height: 300px; */
+        width: 70%;
+        box-sizing: border-box;
+        height: 80%;
+        margin: 0 auto;
+    }
+    .member .right_pic img {
+        /* position:relative; */
+        /* width: 50%; */
+        /* width: 500px; */
+        width: 100%;
+        height: 100%;
+    }
+    .xyz .hidden {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    .right_pic .s {
+        display: none;
+    }
+    .xyz {
+        width: 70%;
+        box-sizing: border-box;
+        height: 80%;
+        margin: 0 auto;
+    }
+    .card {
+        display: none;
+    }
+    header {
+        background-image: none;
+        background-image: url(../img/may_tablet.png);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        background-image: none;
+        background-image: url(../img/may_tablet.png);
+    }
+}

@@ -1,0 +1,215 @@
+body {
+    background-color: #e7ceb5;
+}
+
+
+/*-------------------header----------------*/
+
+header {
+    background-image: none;
+    background-image: url(../img/History_heater.png);
+    color: white;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/*--------------------メイン--------------------------------*/
+.last img{
+    height: 250%;
+    width: 100%;
+}
+
+.h1{
+    text-align: center;
+    font-size: 10vh;
+    color: rgb(236, 86, 78);
+    margin-top: 8vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.box p {
+    font-size: rem;
+}
+
+.timetitle img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container .box {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: #e7ceb5;
+    margin-bottom: 100px;
+}
+
+.redline {
+    display: block;
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    height: calc(100% + 100px);
+}
+
+p.year {
+    text-align: center;
+    color: #fff;
+    font-size: 30pt;
+    font-family: 'Roboto', sans-serif;
+    /* 文字のサイズ */
+    letter-spacing: 4px;
+    /* 文字間 */
+    /* text-shadow: 2px 2px 1px #003366, -2px 2px 1px #003366, 2px -2px 1px #003366, -2px -2px 1px #003366, 2px 0px 1px #003366, 0px 2px 1px #003366, -2px 0px 1px #003366, 0px -2px 1px #003366; */
+    /* 文字の影 */
+}
+
+.section-left img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+}
+
+.section-left {
+    position: relative;
+    width: 50%;
+    background-color: #ec564e;
+    padding: 1.5rem 0;
+    box-sizing: border-box;
+}
+
+.section-left2 {
+    position: relative;
+    width: 100%;
+    background-color: #ec564e;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+.section-left2 img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: 70%;
+}
+
+.tablet {
+    display: none;
+}
+
+.section-right {
+    position: relative;
+    width: 50%;
+    /* height: 500px; */
+    background-color: #fff;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    word-break: keep-all;
+}
+
+.hyou {
+    display: block;
+    margin: 0;
+}
+
+.start {
+    text-align: center;
+}
+
+.year-start {
+    display: block;
+    padding: 10px;
+    width: 80%;
+    height: auto;
+    margin: 0 auto ;
+    box-sizing: border-box;
+}
+
+.hyou {
+    word-break: break-all;
+    padding: 4px;
+}
+
+.mobile {
+    display: block;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .tablet {
+        display: inline-block;
+    }
+    header {
+        background-image: none;
+        background-image: url(../img/HISTORY_tablet.png);
+        color: white;
+        margin: 0 auto;
+        height: 52vw;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:515px) {
+    h2 {
+        display: block;
+        margin: 0px;
+        font-size: 6vw;
+    }
+    header {
+        background-image: none;
+        background-image: url(../img/HISTORY_tablet.png);
+        color: white;
+        margin: 0 auto;
+        height: 52vw;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .container .box {
+        display: block;
+        position: relative;
+        width: 100%;
+        background-color: #e7ceb5;
+    }
+    .section-left img {
+        margin: 0 auto;
+    }
+    .section-right {
+        display: block;
+        padding: 10px 0px 0px 0px;
+        margin: 0;
+        width: 100%;
+    }
+    .section-left {
+        display: block;
+        padding: 0px;
+        margin: 0;
+        width: 100%;
+    }
+    .section-right2 {
+        display: none;
+    }
+    .section-left2 {
+        display: block;
+        padding: 0px;
+        margin: 0;
+        width: 100%;
+    }
+    .section-left2 p {
+        font-size: 4vw;
+    }
+}

@@ -1,0 +1,120 @@
+.br_tab{
+    display: none;
+}
+
+.modaal-content-container {
+    padding: 0;
+}
+
+.person{
+    margin: 0 auto;
+    width: 100%;
+    /* height: 80vh; */
+    display: block;
+}
+
+.c0001{
+    background:linear-gradient(180deg,#00b97c 0%, 50%,white 50%,white 100%);
+}
+.c0002{
+    background:linear-gradient(180deg,#e60013 0%, 50%,white 50%,white 100%);
+}
+.c0003{
+    background:linear-gradient(180deg,#00a6db 0%, 50%,white 50%,white 100%);
+}
+.c0004{
+    background:linear-gradient(180deg,#f49900 0%, 50%,white 50%,white 100%);
+}
+.c0005{
+    background:linear-gradient(180deg,#e30080 0%, 50%,white 50%,white 100%);
+}
+
+.person p, .person h3{
+    margin: 0;
+}
+
+
+.person-photo{
+    margin: 0 auto;
+    width:100%;
+    text-align: center;
+}
+
+.person-photo img{
+    width: 25vw;
+}
+
+.person-name {
+    text-align: center;
+}
+
+.person-answer {
+    /* margin-top: 2%; */
+    /* height:60%; */
+    background: rgba(255,255,255,0.6);
+    /* opacity: 0.4; */
+    font-size: 0.7em;
+    margin: auto;
+    width:60%;
+}
+
+.triangle{
+    width:70px;
+    margin: 0 auto;
+    /* transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+}
+
+.fa-caret-down {
+    width:100%;
+    font-size: 80px;
+    margin: -15px 0;
+    /* font-weight: 600; */
+    text-align: center;
+    /* margin: 10px auto; */
+}
+
+.answer-text {
+    margin:0 auto;
+    width:70%;
+}
+
+.person-answer p span {
+    font-weight: 400;
+    color: coral;
+}
+
+/* のーぱそ */
+@media screen and (max-width:1024px){
+    .br_tab{
+        display: block;
+    }
+
+    .fa-caret-down {
+        width:100%;
+        font-size: 60px;
+        margin: -15px 0;
+        /* font-weight: 600; */
+        text-align: center;
+        /* margin: 10px auto; */
+    }
+}
+
+/* タブレット */
+@media screen and (max-width:768px){
+    .person-name h3 {
+        font-size: 0.9em;
+    }
+    .person-answer {
+        width: 80%;
+    }
+    .person-name p,.person-answer p {
+        font-size: 0.7em;
+    }
+}
+
+/* スマホ */
+@media screen and (max-width:480px){
+
+}

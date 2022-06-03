@@ -1,0 +1,30 @@
+header {
+    background-image: none;
+    background-image: url(../img/June_heater.png);
+    color: white;
+    margin: 0 auto;
+    height: 52vw;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        background-image: none;
+        background-image: url(../img/JUNE_tablet.png);
+        color: white;
+        margin: 0 auto;
+        height: 52vw;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        background-image: none;
+        background-image: url(../img/JUNE_tablet.png);
+        color: white;
+        margin: 0 auto;
+        height: 52vw;
+        width: 100%;
+    }
+}

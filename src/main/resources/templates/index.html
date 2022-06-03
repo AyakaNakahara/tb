@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- 共通headerで置き換える -->
+<head th:replace="view :: meta_header('top',~{::link},~{::script})">
+    <!-- このページ固有で読み込むCSS/JS -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/index.css}" />
+    <script type="text/javascript" th:src="@{/js/datepicker.js}"></script>
+</head>
+<body>
+    <!-- ヘッダーを呼び出す -->
+    <div th:replace="view :: header"></div>
+    <div class="container">
+        <div class="main">
+            <div class="work shadow">
+                <div class="section-title">
+                    <div class="sub-work-left both">
+                        <h3>OUR</h3>
+                    </div>
+                    <div class="sub-work-right both">
+                        <h3>SERVICE</h3>
+                    </div>
+                    <p><strong>OUR SERVICE & WORK</strong></p>
+                    <div class="section-work">
+                        <p>事業紹介</p>
+                    </div>
+                </div>
+                <div class="zigyou-list">
+                    <div class="zigyou">
+                        <h3>SALTO</h3>
+                        <div class="zigyou-image">
+                            <img src="img/salto-top1.png">
+                        </div>
+                        <h6><span>自社サービスから<br>SI事業まで</span></h6>
+                        <p></p>
+                    </div>
+                    <div class="zigyou">
+                        <h3>LEAP</h3>
+                        <div class="zigyou-image">
+                            <img src="img/salto-top2.png">
+                        </div>
+                        <h6><span>就活生必見<br>「スマート就活」運営</span></h6>
+                    </div>
+                    <div class="zigyou">
+                        <h3>SALTO-V</h3>
+                        <div class="zigyou-image">
+                            <img src="img/salto-top3.png">
+                        </div>
+                        <h6><span>ベトナムオフショア<br>/ラボ開発サービス</span></h6>
+                    </div>
+                </div>
+                <div class="btn">
+                <a href="/company"><img src="\img\btn_1.png"></a>
+                </div>
+            </div>
+            <div class="history shadow">
+                <div class="section-title">
+                    <div class="sub-history-left both">
+                        <h3>COMPANY</h3>
+                    </div>
+                    <div class="sub-history-right both">
+                        <h3>BACKGROUND</h3>
+                    </div>
+                    <p><strong>HISTORY</strong></p>
+                    <div class="section-history">
+                        <p>沿革</p>
+                    </div>
+                </div>
+                <div class="slide" id="makeImg">
+                    <img src="img/salto7.jpg"   alt="">
+                    <img src="img/salto2.jpg"   alt="">
+                    <img src="img/salto8.jpg"   alt="">
+                    <img src="img/salto4.jpg"   alt="">
+                    <img src="img/salto5.jpg"  alt="">
+                  </div>
+                  <div class="btn">
+                    <p><strong><a href="/history"><img src="\img\btn_1.png"></a></strong></p>
+                </div>
+
+            </div>
+            <div class="our-team shadow">
+                <div class="section-title">
+                    <div class="sub-team-left both">
+                        <h3>SALTO</h3>
+                    </div>
+                    <div class="sub-team-right both">
+                        <h3>MEMBER</h3>
+                    </div>
+                    <p><strong>OUR MEMBER</strong></p>
+                    <div class="section-team">
+                        <p>メンバー紹介</p>
+                    </div>
+                </div>
+                <div class="team">
+                    <img src="img/top-member1.jpg">
+                    <img src="img/top-member2.jpg">
+
+                    <div class="team-set">
+                        <p style="color: orange;">SALTO GROUP</p>
+                        <p>SALES</p>
+                        <p>ENGINEER</p>
+                        <p>LEAP</p>
+                        <p>MANAGEMENT</p>
+                    </div>
+                </div>
+                <div class="btn">
+                    <p><strong><a href="/shain_all"><img src="\img\btn_1.png"></a></strong></p>
+                </div>
+            </div>
+            <div class="monthly-contents shadow">
+                <div class="section-title">
+                    <div class="sub-content-left both">
+                        <h3>OTHER</h3>
+                    </div>
+                    <div class="sub-content-right both">
+                        <h3>ARTICLE</h3>
+                    </div>
+                    <p><strong>MONTHLY SALTO</strong></p>
+                    <div class="section-contents">
+                        <p>月刊<br>コンテンツ</p>
+                    </div>
+                </div>
+                <div class="contents-pic">
+                    <a href="column4"><img src="img/aprir.png"></a>
+                    <a href="column5"><img src="img/may.png"></a>
+                    <a href="column6"><img src="img/june.png"></a>
+                </div>
+                <div class="btn">
+                    <p><strong><a href="/monthly_salto"><img src="\img\btn_1.png"></a></strong></p>
+                </div>
+            </div>
+
+            <div class="sidebar shadow">
+                <div class="sidebar-top">
+                    <a href="monthly_salto">
+                        <img src="img/menubar.png" width="100%" height="110%">
+                    </a>
+                </div>
+                <div class="sidebar-middle">
+                    <h4>OTHER ARTICLES</h4>
+                    <div class="mini-photo">
+                        <a href="/column4">
+                            <img src="img/aprir.png">
+                        </a>
+                    </div>
+                    <div class="mini-photo">
+                        <a href="/column5">
+                            <img src="img/may.png">
+                        </a>
+                    </div>
+                    <div class="mini-photo">
+                        <a href="/column6">
+                            <img src="img/june.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar-bottom">
+                    <ul>
+                        <li><a href="/"><p>TOP PAGE</p></a></li>
+                        <li><a href="/company"><p>COMPANY</p></a></li>
+                        <li><a href="/history"><p>HISTORY</p></a></li>
+                        <li><a href="/shain_all"><p>OUR MEMBER</p></a></li>
+                        <li><a href="/monthly_salto"><p>MONTHLY SALTO</p></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-- フッターを呼び出す -->
+    <div th:replace="view :: footer"></div>
+</body>

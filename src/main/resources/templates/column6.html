@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- 共通headerで置き換える -->
+<head th:replace="view :: meta_header('top',~{::link},~{::script})">
+    <!-- このページ固有で読み込むCSS/JS -->
+    <link rel="stylesheet" th:href="@{/css/column4.css}" />
+    <link rel="stylesheet" th:href="@{/css/column6.css}" />
+    <link rel="stylesheet" th:href="@{/css/slick-theme.css}" />
+    <link rel="stylesheet" th:href="@{/css/slick.css}" />
+    <link rel="stylesheet" th:href="@{/css/sample.css}" />
+    <script th:src="@{/js/slick.min.js}"></script>
+    <script th:src="@{/js/jquery.js}"></script>
+</head>
+<body>
+    <div class="a">
+    <div class="wrapper">
+        <div class="main-txt">
+            <div class="v_line_left">
+                <br> <br>
+                <h2>
+                    アンケート結果まとめてみた
+                </h2>
+            </div>
+            <p>
+                こんにちは。今回は皆様にご協力いただきましたアンケートの結果をまとめました。<br>
+                アンケートの質問から抜粋し、今回は「ナンバーワンかオンリーワンか」についてと、<br>
+                日本人の永遠の対立「きのこたけのこ戦争」についての結果をまとめていきます。
+            </p>
+
+            <h2> ナンバーワン：オンリーワン　の結果は</h2>
+            <br>
+            <img src="img/anknum.png" width="80%" height="80%">
+            <p>
+                ２４．７％：７５．３％　
+                <br>というオンリーワンがナンバーワンの3倍、という結果になりました。
+            </p>
+            <p>
+                個人的にはもっとナンバーワンが多いと思っておりましたので意外な結果でした。<br>
+                その理由をいくつかピックアップしていきたいと思います。
+            </p>
+            <p>
+                最初に目についたのが、M山さんとM山さんがナンバーワンを選択し、<br>
+                理由が「2位以下が嫌い」と「一番が好きだから」<br>
+                とほぼ同じ回答であるという事です。やはり同じ思いなんですね。
+            </p>
+            <p>
+                次に目についたのは選択したのは違うけれど同じ理由を答えている方がいることです。<br>
+                その理由とは「人間は”元々”特別なオンリーワン」ということ
+                <p>
+                    そうSMAPですねｗこういうところで出てくるということで<br>
+                    SMAPってすごいなぁ、国民的アイドルなんだなぁ、と実感しました。<br>
+                    「こう言ってるからオンリーワンや！」、という方と<br>
+                    「ってことはオンリーワンはもうなってるからなりたいのはナンバーワンや！」<br>
+                    という2つにとることができることが可能なんだと感嘆しました。
+                </p>
+                <p>
+                    その他に、ナンバーワンを目指せばオンリーワンになる、<br>
+                    オンリーワンになると実質ナンバーワンというような<br>
+                    どちらが先に来るかの違いで捉えている方が両方にもいることがあります。<br>
+                    オンリーワンの中には人との比較することや<br>
+                    その中でのナンバーワンや順位に価値を見出せない、という方もいらっしゃいました。
+                </p>
+                <p>
+                    2択で中々難しい中多くの意見が伺うことができた機会でした。
+                </p>
+                <h2>
+                    つぎに「きのこたけのこ戦争」の結果は
+                </h2>
+                <br>
+                <img src="img/anktake.png" width="80%" height="80%">
+                <p>
+                    ３６．４％　：　６３．６％
+                    <br> でたけのこの里の勝利に終わりました。
+                </p>
+                <p>
+                    販売元の明治が直近で行った「きのこの山・たけのこの里　国民総選挙　2019」では<br>
+                    きのこ党が約57％の得票率で勝利し、その前年の2018年では約1％の僅差でたけのこの里の勝利でした。<br><br>
+                    なので今回のアンケートでもかなりの僅差での闘いになると想定していましたが、<br>
+                    蓋を開けてみると2倍近くの得票でたけのこの里の勝利でかなり驚きました。<br><br>
+                    社内に置くお菓子にたけのこの里を置くと秒でなくなりそうですね。<br>
+                    自分はたけのこの里派ではありますが、おやつで買ってこないようにしようと思います。<br>
+                    一つ頂戴でいつの間にかなくなっていそうなのでｗ
+                </p>
+                <p>
+                    以上で今回は以上となります。そのほかの結果は以下で掲載しておきますので、<br>
+                    結果で楽しんでいただければな、と思います。お読みいただきありがとうございました。
+                    <br>
+                    <br>
+                </p>
+                <p>その他の結果</p>
+                <ul class="slider">
+                    <li><a href="#"><img src="img/graph/bunri2.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/graph/curryrice.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/graph/drink.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/graph/ramen.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/graph/inout.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/graph/sports.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/graph/live-in.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/graph/dogs-cats.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/graph/music.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/graph/book.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/graph/Sp-Au.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/graph/travel.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/graph/timetravel.jpg" alt=""></a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="sidebar shadow">
+                <div class="sidebar-top">
+                    <a href="/monthly_salto">
+                        <img src="img/menubar.png" width="100%" height="110%">
+                    </a>
+                </div>
+                <div class="sidebar-middle">
+                    <h4>OTHER ARTICLES</h4>
+                    <div class="mini-photo">
+                        <a href="/column4">
+                        <img src="img/aprir.png">
+                    </a>
+                </div>
+                <div class="mini-photo">
+                    <a href="/column5">
+                    <img src="img/may.png">
+                </a>
+            </div>
+            <div class="mini-photo">
+                <a href="/column6">
+                <img src="\img/june.png">
+            </a>
+        </div>
+    </div>
+    <div class="sidebar-bottom">
+        <ul>
+            <li><a href="/">TOP PAGE</a></li>
+            <li><a href="/company">COMPANY</a></li>
+            <li><a href="/history">HISTORY</a></li>
+            <li><a href="/shain_all">OUR MEMBER</a></li>
+            <li><a href="/monthly_salto">MONTHLY SALTO</a></li>
+        </ul>
+    </div>
+
+</div>
+</div>
+
+<div class="img">
+    <table align="center">
+        <tr>
+            <td><img src="img/aprir.png"
+            hspace="15">
+        </td>
+        <td><img src="img/may.png"
+        hspace="15">
+    </td>
+    <td><img src="img/june.png"
+    hspace="15">
+</td>
+</tr>
+<tr>
+    <td>2020 4/1更新</td>
+    <td>2020 5/1更新</td>
+    <td>2020 6/1更新</td>
+</tr>
+
+<div class="readmore">
+    <tr>
+        <td class="btn">
+            <a href="/column4"><img src="img/btn_1.png"></a>
+        </td>
+        <td class="btn">
+            <a href="/column5"><img src="img/btn_1.png"></a>
+        </td>
+        <td class="btn">
+            <a href="/column6"><img src="img/btn_1.png"></a>
+        </td>
+    </tr>
+</div>
+
+</table>
+</div>
+
+</div>
+<script src="js/slick.js"></script>
+
+	<!-- フッターを呼び出す -->
+    <div th:replace="view :: footer"></div>
+</body>

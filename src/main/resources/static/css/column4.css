@@ -1,0 +1,249 @@
+.a {
+    position: relative;
+    width: 90%;
+    margin: 30px auto;
+}
+
+body {
+    background-color: #fcd7a7d3;
+}
+
+.v_line_left {
+    border-left: thick solid black;
+    border-width: 20px;
+    margin: 30px 30px 30px;
+}
+
+.pic {
+    margin: 50px 30px 30px;
+}
+
+.underred {
+    text-decoration: underline rgba(255, 0, 0, 0.700);
+    margin: 30px 30px 30px;
+}
+
+.underyellow {
+    text-decoration: underline rgba(255, 255, 0, 0.700);
+    margin: 30px 30px 30px;
+}
+
+.underbule {
+    text-decoration: underline rgba(0, 0, 255, 0.700);
+    margin: 30px 30px 30px;
+}
+
+.underpink {
+    text-decoration: underline rgba(243, 55, 243, 0.7);
+    margin: 30px 30px 30px;
+}
+
+.wrapper{
+    /* margin: 50px 70px 0px; */
+    width: 75%;
+    height: auto;
+    text-align: left;
+    background-color: #efe7de;  /* 仮色 */
+    box-shadow: 10px 10px 15px -10px black;
+}
+
+.wrapper h2{
+    font-size: 25px;
+    margin: 0 30px 0;
+}
+
+.main-txt p{
+    margin: 30px 30px 30px;
+    font-size: 15px;
+}
+
+.button-area{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 10%;
+}
+
+.button{
+    width: 49%;
+    height: 4rem;
+    background-color:cadetblue;  /* 仮色 */
+    padding: 1rem;
+    box-sizing: border-box;
+    border: solid black 1px ;
+}
+
+
+/* --------------sidebar------------------------ */
+.sidebar{
+    width:20%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #f0b79a;
+    text-align: center;
+    color: white;
+}
+
+.sidebar img:hover {
+    opacity:0.8;
+}
+
+.sidebar-middle {
+    width:90%;
+    margin: 0 auto;
+}
+
+.sidebar-middle h4 {
+    margin:0.5rem auto;
+}
+
+
+.sidebar-middle .mini-photo img{
+    width: 100%;
+    margin-bottom: 10%;
+    
+}
+
+.sidebar-bottom ul {
+    padding:0;
+    margin:0 0 20px;
+}
+
+.sidebar-bottom ul li {
+    list-style: none;
+    font-size: 16px;
+}
+
+/*-------------------------------*/
+
+.img{
+    /* margin: 0 auto; */
+    /* display: inline-block; */
+    overflow: hidden;
+    height: 0;
+    width: 0;
+  }
+
+  table {
+    margin: 30px auto;
+    text-align: center;
+    font-size:13px ;
+  }
+
+  table tr td p{
+      
+    color: rgb(236, 182, 4);
+    margin-top:5px;
+    /*background-color:#f5fafa;*/
+    background: linear-gradient(to right, white, rgb(14, 234, 241));
+    margin: 15px auto ;
+    box-shadow: 10px 10px 15px -10px black;
+    border:solid black 1px;
+    height: 27px;
+    width: 130px;
+  
+}
+
+header {
+    background-image: none;
+    background-image: url(../img/April_heater.png);
+    color: white;
+    margin: 0 auto;
+    height: 52vw;
+    width: 100%;
+}
+
+
+/*-----------------------------------*/
+
+@media screen and (max-width: 1024px) {
+    .img {
+        display: none;
+        /* z-index: -1; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .underyellow h2 {
+        font-size: 100%;
+    }
+    .underred h2,
+    .underbule h2,
+    .underpink h2 {
+        font-size: 100%;
+    }
+    .main-txt p {
+        font-size: 85%;
+    }
+    .v_line_left h1 {
+        font-size: 30px;
+    }
+    .sidebar {
+        display: none;
+        /* z-index: -1; */
+    }
+    .wrapper {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .img {
+        display: none;
+	width: 90vw;
+	height: auto;
+    }
+    .img table{
+	margin: 0 0.344em;
+    }
+    header {
+        background-image: none;
+        background-image: url(../img/APRIL_tablet.png);
+        color: white;
+        margin: 0 auto;
+        height: 52vw;
+        width: 100%;
+    }
+
+    .main-txt{
+        margin: 8vw auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .underyellow h2 {
+        font-size: 90%;
+    }
+    .underred h2,
+    .underbule h2,
+    .underpink h2 {
+        font-size: 100%;
+    }
+    .main-txt p {
+        font-size: 65%;
+    }
+    .v_line_left h1 {
+        font-size: 20px;
+    }
+    .sidebar {
+        display: none;
+        /* z-index: -1; */
+    }
+    .wrapper {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .img {
+        display: none;
+    }
+    .img table{
+	margin: 0 0.3444em;
+    }
+    header {
+        background-image: none;
+        background-image: url(../img/APRIL_tablet.png);
+        color: white;
+        margin: 0 auto;
+        height: 52vw;
+        width: 100%;
+    }
+}

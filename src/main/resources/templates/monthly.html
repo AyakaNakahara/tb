@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- 共通headerで置き換える -->
+<head th:replace="view :: meta_header('top',~{::link},~{::script})">
+    <!-- このページ固有で読み込むCSS/JS -->
+    <link rel="stylesheet" th:href="@{/css/monthly.css}" />
+</head>
+<body>
+    <!-- ヘッダーを呼び出す -->
+    <div th:replace="view :: header"></div>
+    <div class="container">
+    <div class="this-month">
+        <h2>TEAM 'EDAKABU'</h2>
+        <h3>OUR MEMBERS</h3>
+        <hr style="width:20%; " size="2" color="orange">
+        <p>月刊SALTO5月</p>
+        <div class="thumb">
+            <div class="fuzieda">
+                <img src="img/fujjieda.png">
+            </div>
+            <div class="nihei">
+                <img src="img/nihei.png">
+            </div>
+        </div>
+        <div class="btn">
+            <a href="/column5"><img src="\img\btn_1.png"></a>
+        </div>
+    </div>
+    <div class="main2">
+        <div class="otherarticle">
+            <h2>OTHER ARTICRES</h2>
+            <h3>OUR MOST RECENT POSTS</h3>
+            <hr style="width:20%; " size="2" color="orange">
+            <p>他の記事はこちら</p>
+            <div class="img">
+                <table class="article-pc">
+                    <tr>
+                        <td>
+                            <a href="/column4"><img src="\img\aprir.png"></a>
+                        </td>
+                        <td>
+                            <a href="/column5"><img src="\img\may.png"></a>
+                        </td>
+                        <td>
+                            <a href="/column6"><img src="\img\june.png"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2020 4/1更新</td>
+                        <td>2020 5/1更新</td>
+                        <td>2020 6/1更新</td>
+                    </tr>
+
+                    <div class="readmore">
+                        <tr>
+                            <td class="btn">
+                                <a href="/column4"><img src="\img\btn_1.png"></a>
+                            </td>
+                            <td class="btn">
+                                <a href="/column5"><img src="\img\btn_1.png"></a>
+                            </td>
+                            <td class="btn">
+                                <a href="/column6"><img src="\img\btn_1.png"></a>
+                            </td>
+                        </tr>
+                    </div>
+                </table>
+                <div class="article-tab">
+                    <div class="monthly-article">
+                        <a href="/column4"><img src="\img\aprir.png"></a>
+                        <p>2020 4/1更新</p>
+                    </div>
+                    <div class="monthly-article">
+                        <a href="/column5"><img src="\img\may.png"></a>
+                        <p>2020 5/1更新</p>
+                    </div>
+                    <div class="monthly-article">
+                        <a href="/column6"><img src="\img\june.png"></a>
+                        <p>2020 6/1更新</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsc">
+        <h2>SUBSCRIBE</h2>
+        <h3>SING UP TO OUR NEWSLETTER</h3>
+        <hr style="width:10%; " size="2" color="orange">
+        <p>会員登録はこちら</p>
+        <div class="ml">
+            <input type="text" name="email" placeholder="info@example.com">
+        </div>
+        <div class="sbmt">
+            <input type="submit" value="SUBMIT">
+        </div>
+    </div>
+</div>
+
+	<!-- フッターを呼び出す -->
+    <div th:replace="view :: footer"></div>
+</body>

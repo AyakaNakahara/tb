@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- 共通headerで置き換える -->
+<head th:replace="view :: meta_header('top',~{::link},~{::script})">
+    <!-- このページ固有で読み込むCSS/JS -->
+    <link rel="stylesheet" th:href="@{/css/modaal.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/shain_all.css}" />
+    <script type="text/javascript" th:src="@{/js/jquery.js}"></script>
+    <script type="text/javascript" th:src="@{/js/modaal.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/shain_all.js}"></script>
+</head>
+<body>
+    <!-- ヘッダーを呼び出す -->
+    <div th:replace="view :: header"></div>
+    <div class="wrapper">
+        <article class="officers">
+            <h1>OFFICERS</h1>
+            <div class="officer">
+                <div class="large-card">
+                    <a href="/person?shain_code=00010001" class="modal">
+                        <img src="img/shain/00010001.jpg">
+                        <p>松山純輝</p>
+                    </a>
+                </div>
+                <div class="large-card">
+                    <a href="/person?shain_code=00010002" class="modal">
+                        <img src="img/shain/00010002.jpg">
+                        <p>丸山麻子</p>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <article class="group sales-color">
+            <div class="group-title" >
+                <h1>SALES</h1>
+
+                <img src="/img/SALES.png" alt="">
+                <div class="show-more shadow" id="sales">
+                    <p>show more  <i class="fas fa-angle-down"></i></p>
+                </div>
+            </div>
+            <div id="sales_cards">
+                <div class="cards">
+                        <div class="small-card">
+                            <a href="/person?shain_code=00020001" class="modal">
+                                <img src="img/shain/00020001.jpg">
+                                <p>生田</p>
+                            </a>
+                        </div>
+                        <div class="small-card">
+                            <a href="/person?shain_code=00020004" class="modal">
+                                <img src="img/shain/00020004.jpg">
+                                <p>柴田</p>
+                            </a>
+                        </div>
+                        <div class="small-card">
+                            <a href="/person?shain_code=/00020005" class="modal">
+                                <img src="img/shain//00020005.jpg">
+                                <p>古閑</p>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </article>
+
+            <article class="group engineer-color">
+                <div class="group-title">
+                    <h1>ENGINEER</h1>
+                    <img src="/img/ENGINER.png">
+                    <div class="show-more shadow" id="engineer">
+                        <p>show more  <i class="fas fa-angle-down"></i></p>
+                    </div>
+                </div>
+                <div id="engineer_cards">
+                    <div class="cards">
+                            <div class="small-card">
+                                <a href="/person?shain_code=00030007" class="modal">
+                                    <img src="img/shain/00030007.jpg">
+                                    <p>野沢</p>
+                                </a>
+                            </div>
+                            <div class="small-card">
+                                <a href="/person?shain_code=00030021" class="modal">
+                                    <img src="img/shain/00030021.jpg">
+                                    <p>山口</p>
+                                </a>
+                            </div>
+                            <div class="small-card">
+                                <a href="/person?shain_code=00030046" class="modal">
+                                    <img src="img/shain/00030046.jpg">
+                                    <p>中原</p>
+                                </a>
+                            </div>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="group management-color">
+                <div class="group-title">
+                    <h1>MANAGEMENT</h1>
+                    <img src="/img/MNG.png">
+                    <div class="show-more shadow" id="management">
+                        <p>show more  <i class="fas fa-angle-down"></i></p>
+                    </div>
+                </div>
+                <div id="management_cards">
+                    <div class="cards">
+                            <div class="small-card">
+                                <a href="/person?shain_code=00050001" class="modal">
+                                    <img src="img/shain/00050001.jpg">
+                                    <p>市野</p>
+                                </a>
+                            </div>
+                            <div class="small-card">
+                                <a href="/person?shain_code=00050002" class="modal">
+                                    <img src="img/shain/00050002.jpg">
+                                    <p>琴浦</p>
+                                </a>
+                            </div>
+                            <div class="small-card">
+                                <a href="/person?shain_code=00050003" class="modal">
+                                    <img src="img/shain/00050003.jpg">
+                                    <p>大久保</p>
+                                </a>
+                            </div>
+
+                    </div>
+                </div>
+            </article>
+    </div>
+
+	<!-- フッターを呼び出す -->
+    <div th:replace="view :: footer"></div>
+</body>

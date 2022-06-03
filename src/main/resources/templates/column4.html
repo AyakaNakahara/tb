@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- 共通headerで置き換える -->
+<head th:replace="view :: meta_header('top',~{::link},~{::script})">
+    <!-- このページ固有で読み込むCSS/JS -->
+    <link rel="stylesheet" th:href="@{/css/column4.css}" />
+</head>
+<body>
+    <!-- ヘッダーを呼び出す -->
+    <div th:replace="view :: header"></div>
+    <div class="a">
+    <div class="wrapper">
+        <br>
+        <div class="v_line_left">
+            <h1>19卒の1年、2年、、、</h1>
+        </div>
+        <div class="pic">
+            <img src="img\shugo.jpg" width="100%" height="100%">
+        </div>
+        <div class="main-txt">
+            <p>
+                こんにちは！今月の担当は20卒の大友です！<br>
+                今回は19卒の皆さんに一年を振り返っていただきました！<br>
+                入社から一年、、、華の新卒期間も終わり二年目を迎えた19卒。<br>
+                苦労したこと、勉強になったことなど、新卒に役立つ情報が詰まっています！<br>
+                新卒はもちろん読みますよね、、、？（笑）<br>
+            </p>
+            <div class="underred">
+                <h2>--- 苦労したことはなんですか？ ---</h2>
+            </div>
+            <p>
+                ・通勤時間と報連相<br>
+                ・専門用語を覚えること<br>
+                ・未経験だったので言語習得<br>
+                ・個々の会社と社会のルール<br>
+                ・未経験だったのでプログラムコードを読むことや専門用語を理解すること<br>
+                ・敬語をしゃべれるようになること<br>
+                ・技術の習得<br>
+                ・通勤ラッシュ<br>
+                ・会社の顔として営業活動をしていくこと<br>
+                ・右も左もわからない中、手探りで対応していくこと<br>
+                ・注意されたミスを繰り返してしまうこと<br>
+                ・社会人としてのふるまい方<br><br>
+                技術部の方が多いこともあり、技術面に対する苦労が多く見られます。<br><br>
+                言語の習得だけではなく、専門用語についても理解しなくてはいけないというのはかなり大変ですよね。<br>
+                プログラムを覚えることには私もかなり苦労をしています、、、<br>
+                IT業界の専門用語と思うだけで少し震えてしまいました（笑）<br><br>
+                技術面だけでなく、新しい環境下において手探りで対応することや会社ルールを覚えることなど<br>
+                社会人としての行いという部分でも苦労されたようです。<br><br>
+                慣れ親しんだ学生生活から離れ、社会人という新たなルールの中で生活することへのギャップは大きいと思います。<br>
+                「敬語を喋れるようになること」という回答の回答者がどれほどまで敬語使えていたかはわかりませんが、<br>
+                私もまた学生が使う敬語から社会人としての敬語を使うようになることに苦労しています、、、<br><br>
+                そんなギャップを楽しみつつ素敵な社会人になっていきたいですね。<br>
+            </p>
+            <div class="underyellow">
+                <h2>--- 勉強になったことはなんですか？ ---</h2>
+            </div>
+            <p>
+                ・先輩方とのコミュニケーションをとり考え方を聞くことで新たな解決策が見えること<br>
+                ・一括請負のベンチャー企業でフロントエンドを学んだこと<br>
+                ・ビジネスマナーなどの社会人基礎力が高くなくても社会人として生活できること<br>
+                ・ドキュメント作成力<br>
+                ・技術者として業務をしないにしても、技術の知識がある方が有利だということ<br>
+                ・社会人として
+                ・お客様との接し方、営業としてあるべき姿<br>
+                ・物事の多角的な見方<br>
+                ・客観的な立場から自身を省みることの大切さ<br>
+                ・機械学習などの知識が深くなったこと<br><br>
+                技術面のこと、内面的なことなど様々な回答が揃いました。<br><br>
+                技術面では、現場にでて実際に扱うことで学びになったという旨の回答が多いですね。<br>
+                私も経験を積んで様々な技術を身に着けていきたいと感じました。<br><br>
+                内面的なことではコミュニケーションをとることの重要性、客観的に自身を省みるなどの<br>
+                人として大きく成長できるであろうことがあげられています。<br>
+                中でも、客観的に自身を省みるという多角的な見方についての意見が多いので、<br>
+                業務をするうえで、肝になってくるのではないでしょうか。<br>
+                意識して生活を送ってこなかったのでこれから学んでいきたいですね。<br><br>
+                「ビジネスマナーなどの社会人基礎力が高くなくても社会人として生活できること」<br>
+                という回答からそんなに気負わずとも、社会人生活を送っていけそうなので私は安心しています、、、（笑）
+            </p>
+            <div class="underbule">
+                <h2>--- 新卒へ一言 ---</h2>
+            </div>
+            <p>
+                ・自分は報連相がうまくできてなかったことで周囲に迷惑をかけたので<br>
+                　20卒の皆さんには自分のようなミスをしないでほしいです。/K.K<br>
+                ・勉強の習慣を持つことと分からないことをピンポイントで解決すること/Y.I<br>
+                ・先に少し真面目っぽく書きましたが、変に気負いせず、楽しく過ごしましょう。/S.N<br>
+                ・口頭では認識もれがあるので、確認事項は文面にしたほうが良いです。/S.S<br>
+                ・新卒としての身の振り方を理解しておくこと。/T.S<br>
+                ・研修中はとにかく頑張れ！頑張った結果は後から付いてくるから！/T.H<br>
+                ・寝坊に気をつけましょう。僕は去年一回昼の12時に起床し、戦慄しました。/J.Y<br>
+                ・上手にこなす/K.T<br>
+                ・同期、先輩、上司など、不安なこと分からないことがあれば何でも相談してみてください！<br>
+                ・1年目は分からないことがあって当然なので、一人で悩まないことをおすすめします！/M.M<br>
+                ・これからの1年多くのことを先輩、同期から教えてもらう機会もあると思います。<br>
+                　が意外とその場では覚えておこう、意識しようと思っても後々忘れてしまうことも多々あります。<br>
+                ・そのため、PC上のツールでもいいですしノートでもいいのですが<br>
+                　記録に残して定期的に振り返れるようにすると成長スピードが高まると思います！/K.K<br>
+            </p>
+            <div class="underpink">
+                <h2>--- 最後に ---</h2>
+            </div>
+            <p>
+                新卒を終えたばかりの先輩方の生の声をお届けいたしましたがいかがだったでしょうか？<br><br>
+                新しい環境というのは、新鮮なことばかりだと思います。社会や会社といったそれぞれのルールの中で、<br>
+                最大限結果を残していけるよう先輩方から多くを学んでいきましょう！<br><br>
+                20卒の皆さん、来年後輩に我々が聞いたように21卒に似たような質問をされるかもしれなせんよ。<br>
+                そのときにしっかりと先輩然としていられるでしょうか？<br>
+                成長して先輩然としていられるように日々研鑽していきましょう！<br><br>
+                お忙しい中、ご協力いただきました皆様にはとても感謝しています。ありがとうございました～！<br>
+            </p>
+        </div>
+        <br>
+        <div class="sidebar shadow">
+            <div class="sidebar-top">
+                <a href="monthly_salto">
+                    <img src="img/menubar.png" width="100%" height="110%">
+                </a>
+            </div>
+            <div class="sidebar-middle">
+                <h4>OTHER ARTICLES</h4>
+                <div class="mini-photo">
+                <a href="/column4">
+                    <img src="img/aprir.png">
+                </a>
+                </div>
+                <div class="mini-photo">
+                    <a href="/column5">
+                        <img src="img/may.png">
+                    </a>
+                </div>
+                <div class="mini-photo">
+                    <a href="/column6">
+                        <img src="img/june.png">
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-bottom">
+                <ul>
+                    <li><a href="/">TOP PAGE</a></li>
+                    <li><a href="/company">COMPANY</a></li>
+                    <li><a href="/history">HISTORY</a></li>
+                    <li><a href="/shain_all">OUR MEMBER</a></li>
+                    <li><a href="/monthly_salto">MONTHLY SALTO</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="img">
+        <table align="center" style="width:90vw; margin-top:3vw;">
+          <tr>
+                <td><img src="img/aprir.png" style="width: 22vw; height:auto    ;"
+                        hspace="10">
+                </td>
+                <td><img src="img/may.png" style="width: 22vw; height:auto;"
+                        hspace="10">
+                </td>
+                <td><img src="img/june.png" style="width: 22vw; height:auto;"
+                        hspace="10">
+                </td>
+            </tr>
+            <tr>
+                <td>2020 4/1更新</td>
+                <td>2020 5/1更新</td>
+                <td>2020 6/1更新</td>
+            </tr>
+
+            <div class="readmore">
+                <tr>
+                    <td class="btn">
+                        <a href="/column4"><img src="img/btn_1.png" style="width: 25vw; height:auto;"></a>
+                    </td>
+                    <td class="btn">
+                        <a href="/column5"><img src="img/btn_1.png" style="width: 25vw; height:auto;"></a>
+                    </td>
+                    <td class="btn">
+                        <a href="/column6"><img src="img/btn_1.png" style="width: 25vw; height:auto;"></a>
+                    </td>
+                </tr>
+            </div>
+
+        </table>
+    </div>
+</div>
+
+	<!-- フッターを呼び出す -->
+    <div th:replace="view :: footer"></div>
+</body>
